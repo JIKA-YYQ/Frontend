@@ -1,12 +1,49 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/details/details",
+    "pages/car/car",
+    "pages/my/my",
     "pages/logs/logs"
   ],
   "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "小程序测试",
-    "navigationBarTextStyle":"black"
-  }
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#00A1D6",
+    "navigationBarTitleText": "初学",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "list":[
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "icons/index_2.png",
+        "selectedIconPath": "icons/index.png"
+      },
+      {
+        "pagePath": "pages/details/details",
+        "text": "详情",
+        "iconPath": "icons/detail_2.png",
+        "selectedIconPath": "icons/detail.png"
+      },
+      {
+        "pagePath": "pages/car/car",
+        "text": "购物车",
+        "iconPath": "icons/car_2.png",
+        "selectedIconPath": "icons/car.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "icons/my_2.png",
+        "selectedIconPath": "icons/my.png"
+      }
+    ],
+    "color": "#cccccc",
+    "selectedColor": "#00A1D6"
+  },
+  
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
 }
